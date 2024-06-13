@@ -90,6 +90,6 @@ npm run dev
   - Validação de campos.
   - Feedback de sucesso ou erro no cadastro.
 
-### Contribuição
+## Contribuição
 
 Se você quiser contribuir com o projeto, sinta-se à vontade para fazer um fork do repositório, criar uma nova branch, fazer suas alterações e enviar um pull request.
