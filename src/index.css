@@ -162,6 +162,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--color-white);
+    overflow: hidden;
 }
 
 @media (max-width: 960px) {
@@ -179,15 +180,14 @@ body {
 }
 
 .Toastify__toast {
-    max-width: 400px; /* Ajuste a largura máxima */
-    word-wrap: break-word; /* Quebre palavras longas */
+    max-width: 400px;
+    word-wrap: break-word;
 }
 
 .Toastify__toast-body {
-    font-size: 16px; /* Ajuste o tamanho da fonte */
+    font-size: 16px;
 }
 
 .Toastify__progress-bar {
-    height: 3px; /* Ajuste a altura da barra de progresso */
+    height: 3px;
 }
-

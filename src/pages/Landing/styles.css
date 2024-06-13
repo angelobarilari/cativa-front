@@ -1,6 +1,6 @@
 .image-container {
     position: relative;
-    width: 50%;
+    width: 48%;
 }
 
 .plane-icon {
@@ -20,7 +20,6 @@
     height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: red;
     object-fit: cover;
 }
 
@@ -42,12 +41,11 @@
 
 .content {
     margin-top: 40px;
-    height: 80%;
+    height: 90%;
     padding: 0px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: auto;
 }
 
 .texts-container-header {
@@ -68,7 +66,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2px;
+}
+
+.error-container {
+    position: relative;
+}
+
+.error {
+    color: var(--color-red-500);
+    font-size: 14px;
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    background-color: var(--color-white);
+}
+
+.input-container {
+    height: 70px;
 }
 
 @media (max-width: 960px) {
@@ -79,6 +93,7 @@
     .content {
         margin-top: 50px;
         margin-bottom: 10px;
+        overflow-y: auto;
     }
 
     .content-container {
@@ -97,6 +112,10 @@
         height: 8%;
         width: 100%;
         background-color: var(--color-yellow-700);
+    }
+
+    .input-container {
+        margin-bottom: 15px;
     }
 }
 
@@ -119,11 +138,21 @@
 
     .content {
         margin-bottom: 70px;
+        overflow-y: auto;
+    }
+
+    .input-container {
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width: 860px) and (min-width: 660px) and (max-height: 1280px) {
     .content {
         margin-bottom: 100px;
+        overflow-y: auto;
+    }
+
+    .input-container {
+        margin-bottom: 15px;
     }
 }
