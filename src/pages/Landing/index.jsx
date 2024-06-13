@@ -57,7 +57,7 @@ const Landing = () => {
                 <img
                     src={headerIcon}
                     className="company-icon"
-                    alt="Ícone da companhia"f
+                    alt="Ícone da companhia"
                 />
                 <img src={plane} className="plane-icon" alt="Ícone de avião" />
                 <img src={torre} alt="Imagem inicial" className="image" />
@@ -133,44 +133,78 @@ const Landing = () => {
                                 onSubmit={handleSubmit(onSubmit)}
                                 className="main-content"
                             >
-                                <Input
-                                    type="text"
-                                    placeholder="Digite aqui o nome da sua agência"
-                                    {...register("agencyName")}
-                                />
+                                <div className="input-container">
+                                    <div className="error-container">
+                                        {errors.agencyName && (
+                                            <span className="error">
+                                                {errors.agencyName.message}
+                                            </span>
+                                        )}
+                                    </div>
 
-                                <Input
-                                    type="text"
-                                    placeholder="Digite aqui o seu nome"
-                                    {...register("name")}
-                                />
+                                    <Input
+                                        type="text"
+                                        placeholder="Digite aqui o nome da sua agência"
+                                        {...register("agencyName")}
+                                    />
+                                </div>
 
-                                <InputMask
-                                    className="input"
-                                    mask="(99) 99999-9999"
-                                    type="text"
-                                    placeholder="Digite aqui o telefone para contato"
-                                    {...register("phone")}
-                                />
+                                <div className="input-container">
+                                    <div className="error-container">
+                                        {errors.name && (
+                                            <span className="error">
+                                                {errors.name.message}
+                                            </span>
+                                        )}
+                                    </div>
 
-                                <Input
-                                    type="email"
-                                    placeholder="Digite aqui o e-mail para contato"
-                                    {...register("email")}
-                                />
+                                    <Input
+                                        type="text"
+                                        placeholder="Digite aqui o seu nome"
+                                        {...register("name")}
+                                    />
+                                </div>
 
-                                <textarea
-                                    className="input"
-                                    style={{
-                                        paddingTop: "10px",
-                                        marginBottom: "20px",
-                                        height: "80px",
-                                        width: "100%",
-                                        resize: "none",
-                                    }}
-                                    placeholder="Observações"
-                                    {...register("observations")}
-                                />
+                                <div className="input-container">
+                                    <div className="error-container">
+                                        {errors.phone && (
+                                            <span className="error">
+                                                {errors.phone.message}
+                                            </span>
+                                        )}
+                                    </div>
+
+                                    <InputMask
+                                        className="input"
+                                        mask="(99) 99999-9999"
+                                        type="text"
+                                        placeholder="Digite aqui o telefone para contato"
+                                        {...register("phone")}
+                                    />
+                                </div>
+
+                                <div className="input-container">
+                                    <div className="error-container">
+                                        {errors.email && (
+                                            <span className="error">
+                                                {errors.email.message}
+                                            </span>
+                                        )}
+                                    </div>
+
+                                    <Input
+                                        type="email"
+                                        placeholder="Digite aqui o e-mail para contato"
+                                        {...register("email")}
+                                    />
+                                </div>
+
+                                <div className="input-container">
+                                    <Input
+                                        type="text"
+                                        placeholder="Observações"
+                                    />
+                                </div>
 
                                 <Button
                                     type="submit"

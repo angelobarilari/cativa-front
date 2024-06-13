@@ -19,6 +19,9 @@ const Header = ({
             <div className="header-items">
                 {routes.map((item, index) => (
                     <Title
+                        style={{
+                            cursor: "pointer",
+                        }}
                         onClick={() => setSelectedPage(item.page)}
                         hover={true}
                         isSelected={item.page === selectedPage}
