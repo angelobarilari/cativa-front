@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    height: 10%;
+    min-height: 50px;
+    gap: 10px;
+}
+
+.header-icon {
+    display: none;
+}
+
+.header-items {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 960px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 10%;
+        min-height: 50px;
+        gap: 10px;
+    }
+
+    .header-icon {
+        display: flex;
+    }
+
+    .header-items {
+        display: none;
+    }
+}

@@ -1,0 +1,6 @@
+.common-text {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-body);
+    color: var(--color-black);
+    font-size: 20px;
+}

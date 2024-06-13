@@ -1,0 +1,26 @@
+.default-button {
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-blue-700);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-subtitle);
+    cursor: pointer;
+    padding: 20px;
+    width: auto;
+}
+
+.default-button:hover {
+    background-color: var(--color-blue-700);
+}
+
+@media (max-height: 1280px) {
+    .default-button {
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 800) {
+    .default-button {
+        font-size: 16px;
+    }
+}
